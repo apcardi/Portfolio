@@ -1,0 +1,41 @@
+
+BASIC SETUP
+git init - initalizes a new git repository in directory (use this when creating a new project)
+git clone - creates a copy of an existing repository and makes it local
+BRANCHING AND MERGING
+git branch - lists the local branches in the repository
+git branch <name> - creates a new branch with the name you want
+git checkout <name> - moves to a different branch so you can work on the code there
+git checkout -b <name> - handy when you want to create and immediately start woroking on a new branch
+git merge <name> - after finishing working on a branch, merge those changes into the main 
+git rebase - use rebase to avoid merge commits and keep it clean in the commit history
+ TRACK FILES AND STAGING FILES
+git status - check what changed and what is ready to be committed
+git add <file> - stage specific files for the next committ
+git add . - use this to quickly stage all files that have been changes or added
+COMMITTING CHANGES 
+git commit -m "message" - use this to document changes made in your project with a commit message
+git commit --amend - fix mistakes in your last commit without creating a new one
+PUSHING AND PULLING
+git pull - use this to synchronize your local branch with the repository
+git pull origin <name> - use when you need updates from a specific branch
+git fetch - use this to see what changes eare available before merging
+git push use this to share your commits with others on the repository
+git push origin <name> - use this to push changes to a specific branch, typically when working on a fix or something
+VIEWING HISTORY
+git log - view the full commit history
+git log -oneline - use this to quickly browse the history of the commit in a formatted view
+UNDOING CHANGES
+git reset <file> - unstage a file that you accidentally added before committing
+git reset --hard <commit> -  erases any changes made since the given commit
+git revert <commit> - use this when you want to undo a previous commit without rewriting the commit history
+REMOTE MANAGEMENT
+git remote -v - check the remotes configured for your repo
+git remote add <name><url> -link your local repo to a new repo
+git remote rm <name> - disconecct the repo from a remote repo you don't need
+TAGGING
+git tag <name> - tag specific points in history
+git push origin <name> - share your tags with people or push push tags to the repo
+STASHING
+ git stash - use when you want to switch branches or pull updates without committing unfinished stuff
+ git diff --staged - review the changes that have been staged for commit
