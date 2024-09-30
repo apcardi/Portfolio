@@ -39,3 +39,8 @@ git push origin <name> - share your tags with people or push push tags to the re
 STASHING
  git stash - use when you want to switch branches or pull updates without committing unfinished stuff
  git diff --staged - review the changes that have been staged for commit
+
+
+
+ -------- commmon commands -------
+ 
